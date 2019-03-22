@@ -1,4 +1,4 @@
-# Azure IoT C SDKs for MXChip IoT DevKit
+# Azure IoT Hub Device C SDKs for MXChip IoT DevKit
 
 This repository contains the following for MXChip IoT DevKit:
 * **Azure IoT Hub Device C SDK** to connect devices running C code to Azure IoT Hub.
