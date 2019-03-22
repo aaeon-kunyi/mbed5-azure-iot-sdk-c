@@ -1,0 +1,8 @@
+# Build results
+BUILD/
+
+# VS Code
+.vscode/
+
+# Python compiled bytecode
+*.pyc
