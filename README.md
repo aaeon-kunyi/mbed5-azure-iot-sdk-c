@@ -4,7 +4,7 @@ This repository contains the following for MXChip IoT DevKit:
 * **Azure IoT Hub Device C SDK** to connect devices running C code to Azure IoT Hub.
 * **Azure IoT Hub Device Provisioning Service Client SDK** for enrolling devices with [Azure IoT Device Provisioning Services](https://docs.microsoft.com/azure/iot-dps/) and managing enrollments lists.
 
-Files in thsi repository are copy from the https://github.com/Azure/azure-iot-sdk-c.
+Files in this repository are copy from the https://github.com/Azure/azure-iot-sdk-c.
 
 This repository is only used as a submodule for following repositories 
 * [devkit-sdk-core-lib](https://github.com/VSChina/devkit-sdk-core-lib)
