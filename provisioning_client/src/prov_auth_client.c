@@ -226,7 +226,7 @@ PROV_AUTH_HANDLE prov_auth_create()
         SECURE_DEVICE_TYPE sec_type = prov_dev_security_get_type();
         if (sec_type == SECURE_DEVICE_TYPE_TPM)
         {
-#if defined(HSM_TYPE_SAS_TOKEN)  || defined(HSM_AUTH_TYPE_CUSTOM)
+#if defined(HSM_TYPE_TPM)  || defined(HSM_AUTH_TYPE_CUSTOM)
             /* Codes_SRS_PROV_AUTH_CLIENT_07_003: [ prov_auth_create shall validate the specified secure enclave interface to ensure. ] */
             result->sec_type = PROV_AUTH_TYPE_TPM;
             const HSM_CLIENT_TPM_INTERFACE* tpm_interface = hsm_client_tpm_interface();
