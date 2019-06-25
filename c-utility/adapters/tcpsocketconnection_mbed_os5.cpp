@@ -7,15 +7,12 @@
 #include "TCPSocket.h"
 #include "azure_c_shared_utility/tcpsocketconnection_c.h"
 
-// The NetworkInterface instance of network device
-extern NetworkInterface *_defaultSystemNetwork;
-
 static volatile bool tcpsocketconnection_isConnected = false;
 
 TCPSOCKETCONNECTION_HANDLE tcpsocketconnection_create(void)
 {
 	TCPSocket* tcpSocket = new TCPSocket();
-	tcpSocket->open(_defaultSystemNetwork);
+	tcpSocket->open(NetworkInterface::get_default_instance());
     return tcpSocket;
 }
 
